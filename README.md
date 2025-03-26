@@ -14,8 +14,7 @@ A simple command-line Tic-Tac-Toe game built using Python. Play against a friend
 3. The game ends when a player wins by aligning three marks in a row, column, or diagonal, or when the board is full (Draw).
 
 ## Play Online
-You can play the game directly on Replit:
-🔗 [Tic-Tac-Toe on Replit](https://replit.com/@Necro-Rohan/Tic-Tak-Toe#main.py)
+You can play the game directly on VS Code by copying the `tic-tac-toe.py` file into VS Code or any other editor and start playing!
 
 ## Running Locally
 To play on your local machine:
