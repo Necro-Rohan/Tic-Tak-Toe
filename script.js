@@ -49,7 +49,12 @@ function decisionMaker(move, compMove) {
   return result;
 }
 
+const winSound = new Audio("./sounds/won.wav");
+const loseSound = new Audio("./sounds/lose.wav");
+const tieSound = new Audio("./sounds/tie.wav");
+
 function playGame(move) {
+
   let playerMove;
   if (move === "Rock") {
     playerMove = "./img/rock.png";
@@ -69,6 +74,14 @@ function playGame(move) {
     cpMove = "./img/scissor.png";
   }
   let result = decisionMaker(move, compMove);
+
+  if (result.includes("won")) {
+    winSound.play();
+  }else if (result.includes("Lose")) {
+    loseSound.play();
+  }else {
+    tieSound.play();
+  }
 
   document.querySelector(".js-decision").innerHTML = `<p> ${result} </p>`;
   document.querySelector(
